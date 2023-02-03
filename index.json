@@ -9,7 +9,7 @@
   "is_contrib": true,
   "_links": {
     "repository": "git.effetb.com/effetb/Zama/recipes",
-    "origin_template": "{package}:{version}@git.effetb.com/effetb/Zama/recipes:master",
+    "origin_template": "{package}:{version}@git.effetb.com/effetb/Zama/recipes:main",
     "recipe_template": "https://git.effetb.com/effetb/Zama/recipes/-/raw/main/{package_dotted}.{version}.json"
   }
 }
