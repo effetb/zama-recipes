@@ -16,7 +16,7 @@
           "contents": [
             "zama_cms:",
             "    toolbar:",
-            "        enable: true",
+            "        enabled: true",
             "        position: 'left'",
             ""
           ],
