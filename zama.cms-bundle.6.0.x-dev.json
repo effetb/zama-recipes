@@ -21,6 +21,17 @@
             ""
           ],
           "executable": false
+        },
+        "config/routes/zama_cms.yaml": {
+          "contents": [
+            "zama_cms:",
+            "    resource:",
+            "        path: ../vendor/zama/cms-bundle/src/Controller/",
+            "        namespace: Zama\\CMSBundle\\Controller",
+            "    type: attribute",
+            ""
+          ],
+          "executable": false
         }
       },
       "ref": "9d847a4eb67e88951d7a63e115a339519c2ce11a"
