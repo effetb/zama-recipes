@@ -1,11 +1,11 @@
 {
   "recipes": {
     "zama/cms-bundle": [
-      "6.0.0",
+      "6.0.1",
       "6.0.x-dev"
     ]
   },
-  "branch": "main",
+  "branch": "master",
   "is_contrib": true,
   "_links": {
     "repository": "git.effetb.com/effetb/Zama/recipes",
