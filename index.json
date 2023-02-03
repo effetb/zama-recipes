@@ -9,6 +9,6 @@
   "_links": {
     "repository": "git.effetb.com/effetb/Zama/recipes",
     "origin_template": "{package}:{version}@git.effetb.com/effetb/Zama/recipes:master",
-    "recipe_template": "https://git.effetb.com/effetb/Zama/recipes/-/raw/main/zama.cms-bundle.6.0.json"
+    "recipe_template": "https://git.effetb.com/effetb/Zama/recipes/-/raw/main/{package_dotted}.{version}.json"
   }
 }

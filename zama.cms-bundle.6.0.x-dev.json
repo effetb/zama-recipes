@@ -1,0 +1,29 @@
+{
+  "manifests": {
+    "zama/cms-bundle": {
+      "manifest": {
+        "bundles": {
+          "Zama\\CMSBundle\\ZamaCMSBundle": [
+            "all"
+          ]
+        },
+        "copy-from-recipe": {
+          "config/": "%CONFIG_DIR%"
+        }
+      },
+      "files": {
+        "config/packages/zama_cms.yaml": {
+          "contents": [
+            "zama_cms:",
+            "    toolbar:",
+            "        enable: true",
+            "        position: 'left'",
+            ""
+          ],
+          "executable": false
+        }
+      },
+      "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"
+    }
+  }
+}
