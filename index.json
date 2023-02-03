@@ -5,7 +5,7 @@
       "6.0.x-dev"
     ]
   },
-  "branch": "master",
+  "branch": "main",
   "is_contrib": true,
   "_links": {
     "repository": "git.effetb.com/effetb/Zama/recipes",
