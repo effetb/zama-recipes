@@ -26,7 +26,7 @@
           "contents": [
             "zama_cms:",
             "    resource:",
-            "        path: ../vendor/zama/cms-bundle/src/Controller/",
+            "        path: ../../vendor/zama/cms-bundle/src/Controller/",
             "        namespace: Zama\\CMSBundle\\Controller",
             "    type: attribute",
             ""
