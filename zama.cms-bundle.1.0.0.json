@@ -3,7 +3,7 @@
     "zama/cms-bundle": {
       "manifest": {
         "bundles": {
-          "Zama\\CMSBundle\\ZamaCMSBundle": [
+          "Zama\\CmsBundle\\ZamaCmsBundle": [
             "all"
           ]
         },
@@ -27,7 +27,7 @@
             "zama_cms:",
             "    resource:",
             "        path: ../../vendor/zama/cms-bundle/src/Controller/",
-            "        namespace: Zama\\CMSBundle\\Controller",
+            "        namespace: Zama\\CmsBundle\\Controller",
             "    type: attribute",
             ""
           ],
