@@ -1,7 +1,7 @@
 {
   "recipes": {
     "zama/cms-bundle": [
-      "6.2"
+      "6.0"
     ]
   },
   "branch": "master",

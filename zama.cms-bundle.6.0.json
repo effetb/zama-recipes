@@ -12,7 +12,7 @@
         }
       },
       "files": {
-        "config/packages/zama_cms.yaml": {
+        "config/packages/zama.yaml": {
           "contents": [
             "zama_cms:",
             "    toolbar:",
@@ -22,7 +22,7 @@
           ],
           "executable": false
         },
-        "config/routes/zama_cms.yaml": {
+        "config/routes/zama.yaml": {
           "contents": [
             "zama_cms:",
             "    resource:",
