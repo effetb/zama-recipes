@@ -4,6 +4,6 @@
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
-    "package.json": "package.json"
+    "package.json.dist": "package.json.dist"
   }
 }

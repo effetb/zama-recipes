@@ -1,2 +1,2 @@
   * <fg=green>Congratulations !</> <comment>Zama Cms</> is installed
-  * <fg=blue>Run</> <comment>composer require symfony/webpack-encore-bundle</> to install webpack encore (required)
+  * <fg=blue>Run</> <comment>mv package.json.dist package.json</> to install yarn required packages
