@@ -6,19 +6,12 @@
           "Zama\\CmsBundle\\ZamaCmsBundle": [
             "all"
           ]
+        },
+        "copy-from-recipe": {
+          "config/packages/zama_cms.yaml": "%CONFIG_DIR%/packages/zama_cms.yaml"
         }
       },
       "files": {
-        "config/packages/zama_cms.yaml": {
-          "contents": [
-            "zama_cms:",
-            "    toolbar:",
-            "        enabled: true",
-            "        position: 'left'",
-            ""
-          ],
-          "executable": false
-        },
         "config/routes/zama_cms.yaml": {
           "contents": [
             "zama_cms:",
