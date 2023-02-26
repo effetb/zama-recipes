@@ -3,7 +3,7 @@
     "zama/cms-bundle": {
       "manifest": {
         "bundles": {
-          "Zama\\CmsBundle\\ZamaCmsBundle": [
+          "Zama\\CmsBundle\\CmsBundle": [
             "all"
           ]
         },
@@ -13,7 +13,7 @@
       },
       "files": {
         "config/packages/zama_cms.yaml": {
-          "contents": [
+          "contents": [ompocom
             "zama_cms:",
             "    toolbar:",
             "        enabled: true",
