@@ -13,7 +13,7 @@
       },
       "files": {
         "config/packages/zama_cms.yaml": {
-          "contents": [ompocom
+          "contents": [
             "zama_cms:",
             "    toolbar:",
             "        enabled: true",
