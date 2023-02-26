@@ -1,0 +1,21 @@
+{
+    "manifests": {
+        "zama/cms-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Zama\\CmsBundle\\ZamaCmsBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "post-install-output": [
+                    "  * Zama CMS is ready."
+                ]
+            },
+            "files": [],
+            "ref": "15f8b964676e248b0d26341cfee490c10e8bdda9"
+        }
+    }
+}
