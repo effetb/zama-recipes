@@ -1,1 +1,2 @@
-  * Zama CMS is ready.
+  * <fg=green>Congratulations !</> <comment>Zama Cms</> is installed
+  * <fg=blue>Run</> <comment>composer require symfony/webpack-encore-bundle</> to install webpack encore (required)
