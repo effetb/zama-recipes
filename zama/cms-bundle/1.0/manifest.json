@@ -2,8 +2,9 @@
   "bundles": {
     "Zama\\CmsBundle\\ZamaCmsBundle": ["all"]
   },
-  "copy-from-recipe": {
-    "config/": "%CONFIG_DIR%/",
+  "copy-from-package": {
+    "config/packages": "%CONFIG_DIR%/packages",
+    "config/routes": "%CONFIG_DIR%/routes",
     "package.json.dist": "package.json.dist"
   }
 }

@@ -1,6 +1,0 @@
-zama_cms:
-  resource:
-    path: ../../vendor/zama/cms-bundle/src/Controller/
-    namespace: Zama\CmsBundle\Controller
-    prefix: "%zama_cms.prefix%"
-  type: attribute

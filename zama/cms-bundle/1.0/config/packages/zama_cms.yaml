@@ -1,5 +1,0 @@
-zama_cms:
-  prefix: 'zama'
-  toolbar:
-    enabled: true
-    position: 'left'
