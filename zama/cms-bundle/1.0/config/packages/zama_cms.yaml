@@ -1,5 +1,5 @@
 zama_cms:
-  prefix: update
+  prefix: 'zama'
   toolbar:
     enabled: true
     position: 'left'
