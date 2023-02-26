@@ -8,7 +8,7 @@
           ]
         },
         "copy-from-recipe": {
-          "config/packages/zama_cms.yaml": "%CONFIG_DIR%/packages/zama_cms.yaml"
+          "config/packages": "%CONFIG_DIR%/packages"
         }
       },
       "files": {
