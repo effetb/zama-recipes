@@ -3,7 +3,7 @@
     "zama/cms-bundle": {
       "manifest": {
         "bundles": {
-          "Zama\\CmsBundle\\CmsBundle": [
+          "Zama\\CmsBundle\\ZamaCmsBundle": [
             "all"
           ]
         },
