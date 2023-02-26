@@ -8,7 +8,7 @@
           ]
         },
         "copy-from-recipe": {
-          "config/packages": "%CONFIG_DIR%/packages"
+          "config/": "%CONFIG_DIR%"
         }
       },
       "files": {
