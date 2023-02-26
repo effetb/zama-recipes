@@ -5,6 +5,6 @@
   "copy-from-package": {
     "config/packages": "%CONFIG_DIR%/packages",
     "config/routes": "%CONFIG_DIR%/routes",
-    "package.json.dist": "package.json.dist"
+    "config/yarn/package.json.dist": "package.json.dist"
   }
 }
