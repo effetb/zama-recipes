@@ -1,0 +1,5 @@
+zama_cms:
+  prefix: update
+  toolbar:
+    enabled: true
+    position: 'left'
