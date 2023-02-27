@@ -3,8 +3,8 @@
     "Zama\\CmsBundle\\ZamaCmsBundle": ["all"]
   },
   "copy-from-package": {
-    "config/packages": "%CONFIG_DIR%/packages",
-    "config/routes": "%CONFIG_DIR%/routes",
+    "config/packages/zama_cms.yaml": "%CONFIG_DIR%/packages/zama_cms.yaml",
+    "config/routes/zama_cms.yaml": "%CONFIG_DIR%/routes/zama_cms.yaml",
     "config/yarn/package.json.dist": "package.json.dist"
   }
 }
