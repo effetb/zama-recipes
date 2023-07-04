@@ -12,11 +12,11 @@
     "branch": "tree",
     "is_contrib": false,
     "_links": {
-        "repository": "github.com/loicfavory/zama-recipes",
-        "origin_template": "{package}:{version}@github.com/loicfavory/zama-recipes:tree",
-        "recipe_template": "https://raw.githubusercontent.com/loicfavory/zama-recipes/main/{package_dotted}.{version}.json",
+        "repository": "github.com/effetb/zama-recipes",
+        "origin_template": "{package}:{version}@github.com/effetb/zama-recipes:tree",
+        "recipe_template": "https://raw.githubusercontent.com/effetb/zama-recipes/main/{package_dotted}.{version}.json",
         "recipe_template_relative": "{package_dotted}.{version}.json",
-        "archived_recipes_template": "https://raw.githubusercontent.com/loicfavory/zama-recipes/main/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/effetb/zama-recipes/main/archived/{package_dotted}/{ref}.json",
         "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
     }
 }
