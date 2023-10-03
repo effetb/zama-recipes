@@ -3,6 +3,9 @@
     "recipes": {
         "zama/cms-bundle": [
             "1.0"
+        ],
+        "zama/user-bundle": [
+            "1.0"
         ]
     },
     "recipe-conflicts": [],

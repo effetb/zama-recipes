@@ -1,0 +1,18 @@
+{
+    "manifests": {
+        "zama/user-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Zama\\UserBundle\\ZamaUserBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-package": {
+                    "config/routes/zama_user.yaml": "%CONFIG_DIR%/routes/zama_user.yaml"
+                }
+            },
+            "files": [],
+            "ref": "9436c628dab3f5a19b5f28c91f8fa861914f3f4a"
+        }
+    }
+}
