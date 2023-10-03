@@ -1,0 +1,10 @@
+{
+  "bundles": {
+    "Zama\\UserBundle\\ZamaUserBundle": [
+      "all"
+    ]
+  },
+  "copy-from-package": {
+    "config/routes/zama_user.yaml": "%CONFIG_DIR%/routes/zama_user.yaml"
+  }
+}
