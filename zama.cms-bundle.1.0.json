@@ -9,6 +9,7 @@
                 },
                 "copy-from-package": {
                     "config/packages/zama_cms.yaml": "%CONFIG_DIR%/packages/zama_cms.yaml",
+                    "config/packages/security.yaml": "%CONFIG_DIR%/packages/security.yaml",
                     "config/routes/zama_cms.yaml": "%CONFIG_DIR%/routes/zama_cms.yaml",
                     "config/zama/navigation.yaml": "%CONFIG_DIR%/zama/navigation.yaml",
                     "config/yarn/package.json.dist": "package.json.dist",
