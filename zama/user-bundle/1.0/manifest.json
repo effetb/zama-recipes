@@ -5,6 +5,7 @@
     ]
   },
   "copy-from-package": {
+    "config/packages/security.yaml": "%CONFIG_DIR%/packages/security.yaml",
     "config/routes/zama_user.yaml": "%CONFIG_DIR%/routes/zama_user.yaml",
     "config/zama/accesses.yaml": "%CONFIG_DIR%/zama/accesses.yaml"
   }
