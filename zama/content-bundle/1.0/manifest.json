@@ -7,9 +7,22 @@
     "add-lines"        : [
         {
             "file"    : "config/zama/navigation.yaml",
-            "content" : "- label: \"nav.content\"\n  icon: \"ni ni-brick-fill\"\n  items:\n  - label: \"nav.pages\"\n    route:\n        name: \"zama_page_list\"\n        params: { }\n    access: \"ADMIN_PAGES\"",
+            "content" : "- label: \"nav.content\"\n  icon: \"ni ni-brick-fill\"\n  items:\n  - label: \"nav.pages\"\n    route:\n        name: \"zama_content_backend_page_list\"\n        params: { }\n    access: \"ADMIN_PAGES\"\n",
             "position": "bottom"
+        },
+        {
+            "file"    : "config/zama/accesses.yaml",
+            "content" : "        Paramétrage des pages:\n        - name: \"Gestion des pages\"\n        code: \"ADMIN_PAGES\"\n        levels: [ \"NONE\", \"VIEW\", \"EDIT\", \"DELETE\" ]\n        modules: [ MODULE_SECURITY ]",
+            "target"  : "  roles:",
+            "position": "before"
+        },
+        {
+            "file"    : "config/zama/accesses.yaml",
+            "content" : "        ADMIN_PAGES: \"DELETE\"\n",
+            "target"  : "ADMIN_ROLES: \"DELETE\"",
+            "position": "after"
         }
+
     ],
     "copy-from-package": {
         "config/routes/zama_content.yaml": "%CONFIG_DIR%/routes/zama_content.yaml"
