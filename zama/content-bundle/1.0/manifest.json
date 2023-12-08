@@ -1,0 +1,21 @@
+{
+    "bundles"          : {
+        "Zama\\ContentBundle\\ZamaContentBundle": [
+            "all"
+        ]
+    },
+    "add-lines"        : [
+        {
+            "file"    : "config/zama/navigation.yaml",
+            "content" : "- label: \"nav.content\"\n  icon: \"ni ni-brick-fill\"\n  items:\n  - label: \"nav.pages\"\n    route:\n        name: \"zama_page_list\"\n        params: { }\n    access: \"ADMIN_PAGES\"",
+            "position": "bottom"
+        }
+    ],
+    "copy-from-package": {
+        "config/routes/zama_content.yaml": "%CONFIG_DIR%/routes/zama_content.yaml"
+    },
+    "env"              : {
+        "ZAMA_PAGE_TEMPLATE"  : "default/page.html.twig",
+        "ZAMA_PAGE_ATTACHMENT": "0"
+    }
+}
