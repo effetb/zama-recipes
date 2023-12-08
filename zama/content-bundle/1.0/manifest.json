@@ -13,14 +13,14 @@
         {
             "file"    : "config/zama/accesses.yaml",
             "content" : "        Paramétrage des pages:\n        - name: \"Gestion des pages\"\n        code: \"ADMIN_PAGES\"\n        levels: [ \"NONE\", \"VIEW\", \"EDIT\", \"DELETE\" ]\n        modules: [ MODULE_SECURITY ]",
-            "target"  : "  roles:",
-            "position": "before"
+            "target"  : "  domains:",
+            "position": "after-target"
         },
         {
             "file"    : "config/zama/accesses.yaml",
             "content" : "        ADMIN_PAGES: \"DELETE\"\n",
             "target"  : "ADMIN_ROLES: \"DELETE\"",
-            "position": "after"
+            "position": "after-target"
         }
 
     ],
