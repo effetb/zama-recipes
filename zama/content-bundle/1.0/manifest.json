@@ -11,16 +11,18 @@
             "position": "bottom"
         },
         {
-            "file"    : "config/zama/accesses.yaml",
-            "content" : "        Paramétrage des pages:\n        - name: \"Gestion des pages\"\n        code: \"ADMIN_PAGES\"\n        levels: [ \"NONE\", \"VIEW\", \"EDIT\", \"DELETE\" ]\n        modules: [ MODULE_SECURITY ]",
-            "target"  : "  domains:",
-            "position": "after_target"
+            "file"           : "config/zama/accesses.yaml",
+            "content"        : "        Paramétrage des pages:\n        - name: \"Gestion des pages\"\n        code: \"ADMIN_PAGES\"\n        levels: [ \"NONE\", \"VIEW\", \"EDIT\", \"DELETE\" ]\n        modules: [ MODULE_SECURITY ]\n",
+            "target"         : "  domains:\n",
+            "position"       : "after_target",
+            "warn_if_missing": true
         },
         {
-            "file"    : "config/zama/accesses.yaml",
-            "content" : "        ADMIN_PAGES: \"DELETE\"\n",
-            "target"  : "ADMIN_ROLES: \"DELETE\"",
-            "position": "after_target"
+            "file"           : "config/zama/accesses.yaml",
+            "content"        : "        ADMIN_PAGES: \"DELETE\"\n",
+            "target"         : "ADMIN_ROLES: \"DELETE\"\n",
+            "position"       : "after_target",
+            "warn_if_missing": true
         }
 
     ],
