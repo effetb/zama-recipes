@@ -4,6 +4,9 @@
         "zama/cms-bundle": [
             "1.0"
         ],
+        "zama/content-bundle": [
+            "1.0"
+        ],
         "zama/user-bundle": [
             "1.0"
         ]

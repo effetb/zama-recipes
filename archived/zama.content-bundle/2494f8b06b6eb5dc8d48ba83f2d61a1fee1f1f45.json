@@ -1,0 +1,34 @@
+{
+    "manifests": {
+        "zama/content-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Zama\\ContentBundle\\ZamaContentBundle": [
+                        "all"
+                    ]
+                },
+                "add-lines": [
+                    {
+                        "file": "config/zama/navigation.yaml",
+                        "content": "- label: \"nav.content\"\n  icon: \"ni ni-brick-fill\"\n  items:\n  - label: \"nav.pages\"\n    route:\n        name: \"zama_page_list\"\n        params: { }\n    access: \"ADMIN_PAGES\"",
+                        "position": "bottom"
+                    }
+                ],
+                "copy-from-package": {
+                    "config/routes/zama_content.yaml": "%CONFIG_DIR%/routes/zama_content.yaml"
+                },
+                "env": {
+                    "ZAMA_PAGE_TEMPLATE": "default/page.html.twig",
+                    "ZAMA_PAGE_ATTACHMENT": "0"
+                },
+                "post-install-output": [
+                    "  * <fg=green>Congratulations !</> <comment>Zama Cms</> is installed",
+                    "  * <fg=blue>Run</> <comment>mv package.json.dist package.json</> before install yarn required packages",
+                    "  * <fg=blue>Run</> <comment>mv webpack.config.js.dist webpack.config.js</> before running webpack encore"
+                ]
+            },
+            "files": [],
+            "ref": "2494f8b06b6eb5dc8d48ba83f2d61a1fee1f1f45"
+        }
+    }
+}
