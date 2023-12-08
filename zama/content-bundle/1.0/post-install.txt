@@ -1,3 +1,2 @@
-  * <fg=green>Congratulations !</> <comment>Zama Cms</> is installed
-  * <fg=blue>Run</> <comment>mv package.json.dist package.json</> before install yarn required packages
-  * <fg=blue>Run</> <comment>mv webpack.config.js.dist webpack.config.js</> before running webpack encore
+  * <fg=green>Congratulations !</> <comment>Zama Content Bundle</> is installed
+  * <fg=blue>Run</> <comment>php bin/console d:m:m</> to update database !
