@@ -12,7 +12,7 @@
         },
         {
             "file"           : "config/zama/accesses.yaml",
-            "content"        : "        Paramétrage des pages:\n        - name: \"Gestion des pages\"\n        code: \"ADMIN_PAGES\"\n        levels: [ \"NONE\", \"VIEW\", \"EDIT\", \"DELETE\" ]\n        modules: [ MODULE_SECURITY ]\n",
+            "content"        : "    Paramétrage des pages:\n      - name: \"Gestion des pages\"\n        code: \"ADMIN_PAGES\"\n        levels: [ \"NONE\", \"VIEW\", \"EDIT\", \"DELETE\" ]\n        modules: [ MODULE_SECURITY ]\n",
             "target"         : "  domains:\n",
             "position"       : "after_target",
             "warn_if_missing": true
