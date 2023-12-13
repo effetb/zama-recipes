@@ -1,16 +1,27 @@
 {
-  "bundles": {
-    "Zama\\CmsBundle\\ZamaCmsBundle": ["all"]
+  "bundles"          : {
+    "Zama\\CmsBundle\\ZamaCmsBundle": [
+      "all"
+    ]
   },
   "copy-from-package": {
-    "config/packages/zama_cms.yaml": "%CONFIG_DIR%/packages/zama_cms.yaml",
-    "config/routes/zama_cms.yaml": "%CONFIG_DIR%/routes/zama_cms.yaml",
-    "config/zama/navigation.yaml": "%CONFIG_DIR%/zama/navigation.yaml",
-    "config/yarn/package.json.dist": "package.json.dist",
-    "config/yarn/tinymce.scss": "assets/css/tinymce.scss",
+    "config/packages/zama_cms.yaml"     : "%CONFIG_DIR%/packages/zama_cms.yaml",
+    "config/routes/zama_cms.yaml"       : "%CONFIG_DIR%/routes/zama_cms.yaml",
+    "config/zama/navigation.yaml"       : "%CONFIG_DIR%/zama/navigation.yaml",
+    "config/yarn/package.json.dist"     : "package.json.dist",
+    "config/yarn/tinymce.scss"          : "assets/css/tinymce.scss",
     "config/yarn/webpack.config.js.dist": "webpack.config.js.dist"
   },
-  "env": {
+  "env"              : {
     "ZAMA_CMS_PREFIX": "zama"
-  }
+  },
+  "add-lines"        : [
+    {
+      "file"           : "config/packages/oneup_uploader.yaml",
+      "content"        : "        language:\n            frontend: blueimp\n            use_orphanage: false",
+      "target"         : "mappings:",
+      "position"       : "after_target",
+      "warn_if_missing": true
+    }
+  ]
 }

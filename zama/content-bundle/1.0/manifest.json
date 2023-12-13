@@ -1,36 +1,54 @@
 {
-    "bundles"          : {
-        "Zama\\ContentBundle\\ZamaContentBundle": [
-            "all"
-        ]
-    },
-    "add-lines"        : [
-        {
-            "file"    : "config/zama/navigation.yaml",
-            "content" : "- label: \"nav.content\"\n  icon: \"ni ni-brick-fill\"\n  items:\n  - label: \"nav.pages\"\n    route:\n        name: \"zama_content_backend_page_list\"\n        params: { }\n    access: \"ADMIN_PAGES\"",
-            "position": "bottom"
-        },
-        {
-            "file"           : "config/zama/accesses.yaml",
-            "content"        : "    Paramétrage des pages:\n      - name: \"Gestion des pages\"\n        code: \"ADMIN_PAGES\"\n        levels: [ \"NONE\", \"VIEW\", \"EDIT\", \"DELETE\" ]\n        modules: [ MODULE_SECURITY ]",
-            "target"         : "  domains:",
-            "position"       : "after_target",
-            "warn_if_missing": true
-        },
-        {
-            "file"           : "config/zama/accesses.yaml",
-            "content"        : "        ADMIN_PAGES: \"DELETE\"",
-            "target"         : "ADMIN_ROLES: \"DELETE\"",
-            "position"       : "after_target",
-            "warn_if_missing": true
+    "manifests": {
+        "zama/content-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Zama\\ContentBundle\\ZamaContentBundle": [
+                        "all"
+                    ]
+                },
+                "add-lines": [
+                    {
+                        "file": "config/zama/navigation.yaml",
+                        "content": "- label: \"nav.content\"\n  icon: \"fa-light fa-table-layout\"\n  items:\n  - label: \"nav.pages\"\n    route:\n        name: \"zama_content_backend_page_list\"\n        params: { }\n    access: \"ADMIN_PAGES\"",
+                        "position": "bottom"
+                    },
+                    {
+                        "file": "config/zama/accesses.yaml",
+                        "content": "    Param\u00e9trage des pages:\n      - name: \"Gestion des pages\"\n        code: \"ADMIN_PAGES\"\n        levels: [ \"NONE\", \"VIEW\", \"EDIT\", \"DELETE\" ]\n        modules: [ MODULE_SECURITY ]",
+                        "target": "  domains:",
+                        "position": "after_target",
+                        "warn_if_missing": true
+                    },
+                    {
+                        "file": "config/zama/accesses.yaml",
+                        "content": "        ADMIN_PAGES: \"DELETE\"",
+                        "target": "ADMIN_ROLES: \"DELETE\"",
+                        "position": "after_target",
+                        "warn_if_missing": true
+                    },
+                    {
+                        "file": "config/packages/oneup_uploader.yaml",
+                        "content": "        page:\n            frontend: blueimp\n            use_orphanage: false",
+                        "target": "mappings:",
+                        "position": "after_target",
+                        "warn_if_missing": true
+                    }
+                ],
+                "copy-from-package": {
+                    "config/routes/zama_content.yaml": "%CONFIG_DIR%/routes/zama_content.yaml"
+                },
+                "env": {
+                    "ZAMA_PAGE_TEMPLATE": "default/page.html.twig",
+                    "ZAMA_PAGE_ATTACHMENT": "0"
+                },
+                "post-install-output": [
+                    "  * <fg=green>Congratulations !</> <comment>Zama Content Bundle</> is installed",
+                    "  * <fg=blue>Run</> <comment>php bin/console d:m:m</> to update database !"
+                ]
+            },
+            "files": [],
+            "ref": "cce9296108abe9eff9337c9279d2546cae693367"
         }
-
-    ],
-    "copy-from-package": {
-        "config/routes/zama_content.yaml": "%CONFIG_DIR%/routes/zama_content.yaml"
-    },
-    "env"              : {
-        "ZAMA_PAGE_TEMPLATE"  : "default/page.html.twig",
-        "ZAMA_PAGE_ATTACHMENT": "0"
     }
 }
