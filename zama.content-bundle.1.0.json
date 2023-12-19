@@ -10,7 +10,7 @@
                 "add-lines": [
                     {
                         "file": "config/zama/navigation.yaml",
-                        "content": "- label: \"nav.content\"\n  icon: \"ni ni-brick-fill\"\n  items:\n  - label: \"nav.pages\"\n    route:\n        name: \"zama_content_backend_page_list\"\n        params: { }\n    access: \"ADMIN_PAGES\"",
+                        "content": "- label: \"nav.content\"\n  icon: \"fa-light fa-table-layout\"\n  items:\n  - label: \"nav.pages\"\n    route:\n        name: \"zama_content_backend_page_list\"\n        params: { }\n    access: \"ADMIN_PAGES\"",
                         "position": "bottom"
                     },
                     {
