@@ -44,7 +44,7 @@
                 },
                 "post-install-output": [
                     "  * <fg=green>Congratulations !</> <comment>Zama Content Bundle</> is installed",
-                    "  * <fg=blue>Run</> <comment>php bin/console d:m:m</> to update database !"
+                    "  * <fg=blue>Run</> <comment>php bin/console d:m:m</> to update the database !"
                 ]
             },
             "files": [],
