@@ -1,0 +1,2 @@
+  * <fg=green>Congratulations !</> <comment>Zama Routing Bundle</> is installed
+  * <fg=blue>Run</> <comment>php bin/console zama:routing:install</> to update database !

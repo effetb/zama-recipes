@@ -1,0 +1,31 @@
+{
+  "bundles"          : {
+    "Zama\\RoutingBundle\\ZamaRoutingBundle": [
+      "all"
+    ]
+  },
+  "add-lines"        : [
+    {
+      "file"    : "config/zama/navigation.yaml",
+      "content" : "- label: \"nav.content\"\n  icon: \"fa-light fa-table-layout\"\n  items:\n  - label: \"nav.pages\"\n    route:\n        name: \"zama_content_backend_page_list\"\n        params: { }\n    access: \"ADMIN_PAGES\"",
+      "position": "bottom"
+    },
+    {
+      "file"           : "config/zama/accesses.yaml",
+      "content"        : "    Param\u00e9trage du routing:\n      - name: \"Gestion du routing\"\n        code: \"ADMIN_ROUTING\"\n        levels: [ \"NONE\", \"VIEW\", \"EDIT\", \"DELETE\" ]\n        modules: [ MODULE_SECURITY ]",
+      "target"         : "  domains:",
+      "position"       : "after_target",
+      "warn_if_missing": true
+    },
+    {
+      "file"           : "config/zama/accesses.yaml",
+      "content"        : "        ADMIN_ROUTING: \"DELETE\"",
+      "target"         : "ADMIN_ROLES: \"DELETE\"",
+      "position"       : "after_target",
+      "warn_if_missing": true
+    }
+  ],
+  "copy-from-package": {
+    "config/routes/zama_routing.yaml": "%CONFIG_DIR%/routes/zama_routing.yaml"
+  }
+}
