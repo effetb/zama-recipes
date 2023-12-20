@@ -7,6 +7,9 @@
         "zama/content-bundle": [
             "1.0"
         ],
+        "zama/routing-bundle": [
+            "1.0"
+        ],
         "zama/user-bundle": [
             "1.0"
         ]
