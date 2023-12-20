@@ -36,6 +36,13 @@
       "target"         : "mappings",
       "position"       : "after_target",
       "warn_if_missing": true
+    },
+    {
+      "file"           : "composer.json",
+      "content"        : "        \"friendsofphp/php-cs-fixer\": \"*\"",
+      "target"         : "\"require-dev\": {",
+      "position"       : "after_target",
+      "warn_if_missing": true
     }
   ]
 }
