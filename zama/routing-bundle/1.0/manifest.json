@@ -7,7 +7,7 @@
   "add-lines"        : [
     {
       "file"    : "config/zama/navigation.yaml",
-      "content" : "-   label: \"nav.routing\"\n    icon: \"fa-light fa-link\"\n    items:\n    -   label: \"nav.rewrite_rule\"\n        route:\n            name: \"zama_routing_backend_rewritetype_list\"\n            params: { }\n        icon: \"fa fa-globe\"\n        access: \"ADMIN_ROUTING\"\n    -   label: \"nav.urls\"\n        route:\n            name: \"zama_routing_backend_urlrewriting_list\"\n            params: { }\n        icon: \"fa fa-globe\"\n        access: \"ADMIN_ROUTING\"\n    -   label: \"nav.webforwarding\"\n        route:\n            name: \"zama_routing_backend_webforwarding_list\"\n            params: { }\n        icon: \"fa fa-globe\"\n        access: \"ADMIN_ROUTING\"",
+      "content" : "-   label: \"nav.routing\"\n    icon: \"fa-light fa-link\"\n    items:\n    -   label: \"nav.rewrite_rule\"\n        route:\n            name: \"zama_routing_backend_rewritetype_list\"\n            params: { }\n        icon: \"fa-light fa-road\"\n        access: \"ADMIN_ROUTING\"\n    -   label: \"nav.urls\"\n        route:\n            name: \"zama_routing_backend_urlrewriting_list\"\n            params: { }\n        icon: \"fa-light fa-globe\"\n        access: \"ADMIN_ROUTING\"\n    -   label: \"nav.webforwarding\"\n        route:\n            name: \"zama_routing_backend_webforwarding_list\"\n            params: { }\n        icon: \"fa-light fa-share-all\"\n        access: \"ADMIN_ROUTING\"",
       "position": "bottom"
     },
     {
@@ -26,6 +26,6 @@
     }
   ],
   "copy-from-package": {
-    "config/routes/zama_routing.yaml": "%CONFIG_DIR%/routes/zama_routing.yaml"
+    "config/routes/zama_routing.yaml": "%CONFIG_DIR%/routes/zzz_zama_routing.yaml"
   }
 }
