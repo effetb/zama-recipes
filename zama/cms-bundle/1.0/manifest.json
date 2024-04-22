@@ -24,14 +24,14 @@
       "warn_if_missing": true
     },
     {
-      "file"           : "config/packages/stof_doctrine_extensions .yaml",
+      "file"           : "config/packages/stof_doctrine_extensions.yaml",
       "content"        : "    orm:\n        default:\n            translatable: true\n            timestampable: true\n            blameable: true\n            softdeleteable: true",
       "target"         : "default_locale: en_US",
       "position"       : "after_target",
       "warn_if_missing": true
     },
     {
-      "file"           : "config/packages/doctrine .yaml",
+      "file"           : "config/packages/doctrine.yaml",
       "content"        : "    gedmo_translatable:\n      type: attribute\n      prefix: Gedmo\\Translatable\\Entity\n      dir: \"%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Translatable/Entity\"\n      alias: GedmoTranslatable\n      is_bundle: false",
       "target"         : "mappings",
       "position"       : "after_target",
