@@ -26,14 +26,15 @@
     },
     {
       "file"           : "config/packages/oneup_uploader.yaml",
-      "content"        : "        page:\n            frontend: blueimp\n            use_orphanage: false",
+      "content"        : "        pages:\n            frontend: blueimp\n            use_orphanage: true\n            route_prefix: \"zama\"",
       "target"         : "mappings:",
       "position"       : "after_target",
       "warn_if_missing": true
     }
   ],
   "copy-from-package"  : {
-    "config/routes/zama_content.yaml": "%CONFIG_DIR%/routes/zama_content.yaml"
+    "config/routes/zama_content.yaml": "%CONFIG_DIR%/routes/zama_content.yaml",
+    "config/package/zama_content.yaml": "%CONFIG_DIR%/package/zama_content.yaml"
   },
   "env"                : {
     "ZAMA_PAGE_TEMPLATE"  : "default/page.html.twig",
