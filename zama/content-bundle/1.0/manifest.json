@@ -34,7 +34,7 @@
   ],
   "copy-from-package"  : {
     "config/routes/zama_content.yaml": "%CONFIG_DIR%/routes/zama_content.yaml",
-    "config/package/zama_content.yaml": "%CONFIG_DIR%/package/zama_content.yaml"
+    "config/packages/zama_content.yaml": "%CONFIG_DIR%/packages/zama_content.yaml"
   },
   "env"                : {
     "ZAMA_PAGE_TEMPLATE"  : "default/page.html.twig",
