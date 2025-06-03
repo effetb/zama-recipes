@@ -5,10 +5,39 @@ on:
         branches:
             - tree
 
-
 jobs:
-    call-flex-update:
-        uses: web-token/recipes/.github/workflows/callable-flex-update.yml@tree
-        with:
-            branch: tree
-            versions_json: .github/versions.json
+    flex-update:
+        name: Update Flex endpoint
+        runs-on: ubuntu-24.04
+        steps:
+            -
+                name: Checkout
+                uses: actions/checkout@v4
+                id: checkout
+                with:
+                    fetch-depth: 0
+
+            -
+                name: Install tools
+                run: |
+                    git config --global user.email ""
+                    git config --global user.name "github-action[bot]"
+                    cd .github
+                    wget -q -O recipes-checker.zip https://codeload.github.com/symfony-tools/recipes-checker/zip/refs/heads/main
+                    unzip recipes-checker.zip
+                    cd recipes-checker-main
+                    composer install --ansi --no-dev
+
+            -
+                name: Update Flex endpoint
+                run: |
+                    mkdir .github/flex-endpoint
+                    git ls-tree HEAD */*/* | php .github/recipes-checker-main/run generate:flex-endpoint ${{ github.repository }} tree main .github/flex-endpoint .github/versions.json
+                    git switch main
+                    git rm -q *.json
+                    mv .github/flex-endpoint/*.json .
+                    git add *.json
+                    cp -a .github/flex-endpoint/archived .
+                    git add archived/
+                    git commit -m 'Update Flex endpoint' || true
+                    git push origin -f main
