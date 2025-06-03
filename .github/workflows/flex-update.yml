@@ -5,9 +5,6 @@ on:
         branches:
             - tree
 
-defaults:
-    run:
-        shell: bash
 
 jobs:
     call-flex-update:
