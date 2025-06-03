@@ -40,14 +40,14 @@
     {
       "file"           : "composer.json",
       "content"        : "        \"friendsofphp/php-cs-fixer\": \"*\"",
-      "target"         : "\"require-dev\": {",
+      "target"         : "\"require-dev\"",
       "position"       : "after_target",
       "warn_if_missing": true
     },
     {
       "file"           : "package.json",
       "content"        : "    \"cropperjs\": \"^1\",",
-      "target"         : "\"dependencies\":",
+      "target"         : "\"dependencies\"",
       "position"       : "after_target",
       "warn_if_missing": true
     }
